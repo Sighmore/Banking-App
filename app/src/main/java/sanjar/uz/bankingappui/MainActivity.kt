@@ -13,6 +13,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import sanjar.uz.bankingappui.ui.theme.BankingAppUITheme
 
@@ -26,17 +27,18 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-
+                    HomeScreen()
                 }
             }
         }
     }
 }
 
+@Preview
 @Composable
 fun HomeScreen() {
     Scaffold(bottomBar = {
-
+        BottomNavigationBar()
     }) { padding ->
         Column(
             Modifier
