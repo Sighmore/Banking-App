@@ -12,6 +12,10 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.rounded.AccountCircle
+import androidx.compose.material.icons.rounded.MailOutline
+import androidx.compose.material.icons.rounded.Menu
+import androidx.compose.material.icons.rounded.Notifications
 import androidx.compose.material.icons.rounded.Search
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -37,14 +41,14 @@ fun WalletSection() {
     ) {
         Column {
             Text(
-                text = "Wallet",
+                text = "Account",
                 fontSize = 17.sp,
                 color = MaterialTheme.colorScheme.onBackground
             )
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(5.dp))
             Text(
-                text = "44.751",
-                fontSize = 24.sp,
+                text = "KSh. 379,457.98",
+                fontSize = 22.sp,
                 color = MaterialTheme.colorScheme.onBackground,
                 fontWeight = FontWeight.Bold
             )
@@ -57,9 +61,9 @@ fun WalletSection() {
                 .padding(8.dp)
         ) {
             Icon(
-                imageVector = Icons.Rounded.Search,
+                imageVector = Icons.Rounded.Menu,
                 tint = MaterialTheme.colorScheme.onSecondaryContainer,
-                contentDescription = "Search"
+                contentDescription = "Menu"
             )
         }
     }

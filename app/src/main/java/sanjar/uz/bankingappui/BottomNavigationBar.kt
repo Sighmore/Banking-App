@@ -6,6 +6,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.AccountCircle
 import androidx.compose.material.icons.rounded.Email
 import androidx.compose.material.icons.rounded.Home
+import androidx.compose.material.icons.rounded.Lock
 import androidx.compose.material.icons.rounded.Notifications
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -18,10 +19,22 @@ import androidx.compose.ui.tooling.preview.Preview
 import sanjar.uz.bankingappui.data.BottomNav
 
 val items = listOf(
-    BottomNav(title = "Home", icon = Icons.Rounded.Home),
-    BottomNav(title = "Wallet", icon = Icons.Rounded.Email),
-    BottomNav(title = "Notifications", icon = Icons.Rounded.Notifications),
-    BottomNav(title = "Account", icon = Icons.Rounded.AccountCircle),
+    BottomNav(
+        title = "Home",
+        icon = Icons.Rounded.Home
+    ),
+    BottomNav(
+        title = "Wallet",
+        icon = Icons.Rounded.Email
+    ),
+    BottomNav(
+        title = "Notifications",
+        icon = Icons.Rounded.Notifications
+    ),
+    BottomNav(
+        title = "Security",
+        icon = Icons.Rounded.Lock
+    ),
 )
 
 @Preview
