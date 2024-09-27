@@ -31,6 +31,9 @@ Welcome to the All-in-One Banking App UI repository! This project showcases a mo
 
 - **UI/UX Improvements**: Focuses on creating a polished user interface with smooth interactions, making financial management a breeze.
 
+- ![app](https://github.com/user-attachments/assets/85480bdc-2df1-4070-9e66-41ecb5fcaac8)
+
+
 ## Technologies Used
 
 - Kotlin
