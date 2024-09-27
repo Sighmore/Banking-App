@@ -50,6 +50,15 @@ val cards=listOf(
         balance = "Ksh 234,657.75",
         color = getGradient(BlueStart, BlueEnd)
     ),
+
+    Card(
+        cardType = "Equity",
+        cardName = "Savings",
+        cardNumber = "4566 6674 7774 4555",
+        balance = "Ksh 167,767.65",
+        color = getGradient(OrangeStart, OrangeEnd)
+    ),
+
     Card(
         cardType = "Airtel",
         cardName = "Airtel Money",
@@ -73,13 +82,7 @@ val cards=listOf(
         color = getGradient(GreenStart, GreenEnd)
     ),
 
-    Card(
-        cardType = "Equity",
-        cardName = "Savings",
-        cardNumber = "4566 6674 7774 4555",
-        balance = "Ksh 167,767.65",
-        color = getGradient(OrangeStart, OrangeEnd)
-    ),
+
 
 
 
