@@ -28,16 +28,27 @@ import sanjar.uz.bankingappui.ui.theme.BlueEnd
 import sanjar.uz.bankingappui.ui.theme.BlueStart
 import sanjar.uz.bankingappui.ui.theme.GreenEnd
 import sanjar.uz.bankingappui.ui.theme.GreenStart
+import sanjar.uz.bankingappui.ui.theme.OrangeEnd
+import sanjar.uz.bankingappui.ui.theme.OrangeStart
 import sanjar.uz.bankingappui.ui.theme.RedEnd
 import sanjar.uz.bankingappui.ui.theme.RedStart
 
 val cards=listOf(
+
     Card(
-        cardType = "M-pesa",
-        cardName = "Till",
-        cardNumber = "568 954",
-        balance = "Ksh 24,000",
+        cardType = "Cooperative",
+        cardName = "Cooperative",
+        cardNumber = "1236 6574 7563 8754",
+        balance = "Ksh 89,857.76",
         color = getGradient(GreenStart, GreenEnd)
+    ),
+
+    Card(
+        cardType = "Barclays",
+        cardName = "Barclays",
+        cardNumber = "2365 454 7455 4675",
+        balance = "Ksh 234,657.75",
+        color = getGradient(BlueStart, BlueEnd)
     ),
     Card(
         cardType = "Airtel",
@@ -53,28 +64,24 @@ val cards=listOf(
         balance = "Ksh 24,234.65",
         color = getGradient(GreenStart, GreenEnd)
     ),
+
     Card(
-        cardType = "Barclays",
-        cardName = "Barclays",
-        cardNumber = "2365 454 7455 4675",
-        balance = "Ksh 234,657.75",
-        color = getGradient(BlueStart, BlueEnd)
+        cardType = "M-pesa",
+        cardName = "Till",
+        cardNumber = "568 954",
+        balance = "Ksh 24,000",
+        color = getGradient(GreenStart, GreenEnd)
     ),
+
     Card(
         cardType = "Equity",
         cardName = "Savings",
         cardNumber = "4566 6674 7774 4555",
         balance = "Ksh 167,767.65",
-        color = getGradient(RedStart, RedEnd)
+        color = getGradient(OrangeStart, OrangeEnd)
     ),
 
-    Card(
-        cardType = "Cooperative",
-        cardName = "Cooperative",
-        cardNumber = "1236 6574 7563 8754",
-        balance = "Ksh 89,857.76",
-        color = getGradient(GreenStart, GreenEnd)
-    ),
+
 
     )
 

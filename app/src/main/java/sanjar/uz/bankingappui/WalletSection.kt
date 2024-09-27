@@ -41,7 +41,7 @@ fun WalletSection() {
     ) {
         Column {
             Text(
-                text = "Account",
+                text = "Total Balance",
                 fontSize = 17.sp,
                 color = MaterialTheme.colorScheme.onBackground
             )
