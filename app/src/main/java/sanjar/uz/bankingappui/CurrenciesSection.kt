@@ -33,6 +33,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
@@ -87,12 +88,16 @@ fun CurrenciesSection(){
     var iconState by remember {
         mutableStateOf(Icons.Rounded.KeyboardArrowUp)
     }
-
+    Box(modifier = Modifier
+        .fillMaxSize(),
+        contentAlignment = Alignment.BottomCenter
+    ){
     Column(modifier = Modifier
         .clip(RoundedCornerShape(topStart = 30.dp, topEnd = 30.dp))
         .background(MaterialTheme.colorScheme.inverseOnSurface)
         .animateContentSize(),
-    ) {
+        )
+    {
 
         Row (modifier = Modifier
             .padding(16.dp)
@@ -186,6 +191,7 @@ fun CurrenciesSection(){
                     }
                 }
             }
+            }
         }
     }
 
@@ -200,7 +206,16 @@ fun CurrencyItem(index:Int,width: Dp){
         verticalAlignment = Alignment.CenterVertically)
     {
 
-        Box(modifier = Modifier.clip(RoundedCornerShape(8.dp)).background(GreenStart).padding(4.dp))
+        Box(modifier = Modifier
+            .clip(RoundedCornerShape(8.dp))
+            .background(GreenStart)
+            .padding(4.dp)){
+            Icon(modifier = Modifier
+                .size(18.dp),
+                imageVector = currency.icon, contentDescription = currency.name,
+                tint = Color.White
+                )
+        }
 
     }
 }
