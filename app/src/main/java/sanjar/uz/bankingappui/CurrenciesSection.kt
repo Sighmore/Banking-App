@@ -46,15 +46,15 @@ import sanjar.uz.bankingappui.ui.theme.GreenStart
 val currencies= listOf(
     Currency(
         name="Safaricom",
-        buy= 376.67,
-        sell= 374.65,
-        icon = Icons.Rounded.Share
+        buy= 376.6,
+        sell= 374.6,
+        icon = Icons.Rounded.Check
     ),
 
     Currency(
         name="Airtel",
-        buy= 345.67,
-        sell= 334.65,
+        buy= 345.6,
+        sell= 334.9,
         icon = Icons.Rounded.Check
     ),
     Currency(
@@ -111,9 +111,9 @@ fun CurrenciesSection(){
                 .clickable {
                     isVisible = !isVisible
                     iconState = if (isVisible) {
-                        Icons.Rounded.KeyboardArrowUp
-                    } else {
                         Icons.Rounded.KeyboardArrowDown
+                    } else {
+                        Icons.Rounded.KeyboardArrowUp
                     }
                 }
                 ){
@@ -154,7 +154,7 @@ fun CurrenciesSection(){
                     Spacer(modifier = Modifier.height(16.dp))
                     Row (modifier = Modifier.fillMaxWidth()){
                         Text(
-                            text = "Company\nVerified",
+                            text = "Company",
                             modifier =Modifier
                                 .width(width),
                             fontWeight = FontWeight.SemiBold,
@@ -216,6 +216,38 @@ fun CurrencyItem(index:Int,width: Dp){
                 tint = Color.White
                 )
         }
+
+        Text(
+            text = currency.name,
+            modifier =Modifier
+                .width(width)
+                .padding(start = 10.dp),
+            fontWeight = FontWeight.Bold,
+            fontSize = 18.sp,
+            color=MaterialTheme.colorScheme.onBackground
+        )
+
+        Text(
+            text = "${currency.buy}",
+            modifier =Modifier
+                .width(width)
+                .padding(start = 10.dp),
+            fontWeight = FontWeight.Bold,
+            fontSize = 16.sp,
+            color=MaterialTheme.colorScheme.onBackground,
+            textAlign = TextAlign.End
+        )
+
+        Text(
+            text = "${currency.sell}",
+            modifier =Modifier
+                .width(width)
+                .padding(start = 10.dp),
+            fontWeight = FontWeight.Bold,
+            fontSize = 16.sp,
+            color=MaterialTheme.colorScheme.onBackground,
+            textAlign = TextAlign.End
+        )
 
     }
 }

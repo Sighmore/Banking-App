@@ -3,11 +3,13 @@ package sanjar.uz.bankingappui
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Surface
@@ -39,14 +41,15 @@ class MainActivity : ComponentActivity() {
 fun HomeScreen() {
     Scaffold(bottomBar = {
         BottomNavigationBar()
-    }) { padding ->
+    }
+        ) { padding ->
         Column(
             Modifier
                 .fillMaxSize()
                 .padding(padding)) {
             WalletSection()
             CardsSection()
-            Spacer(modifier = Modifier.height(16.dp))
+            Spacer(modifier = Modifier.height(8.dp))
             FinanceSection()
             Spacer(modifier = Modifier.height(16.dp))
             CurrenciesSection()
