@@ -31,7 +31,9 @@ Welcome to the All-in-One Banking App UI repository! This project showcases a mo
 
 - **UI/UX Improvements**: Focuses on creating a polished user interface with smooth interactions, making financial management a breeze.
 
-- ![share prices](https://github.com/user-attachments/assets/d55cba75-f8a7-4ef4-baef-ebdabf3a7298)
+- ![share prices](https://github.com/user-attachments/assets/d55cba75-f8a7-4ef4-baef-ebdabf3a7298)![Dark theme](https://github.com/user-attachments/assets/7822df50-9e61-445f-a2e0-97385433c2d3)![landscape](https://github.com/user-attachments/assets/096686ce-4d9f-42c2-ae7b-19d7a60972f9)
+
+
 
 
 
